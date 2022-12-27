@@ -16,7 +16,7 @@
   align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
-  width: 100%;
+  width: 50%;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
@@ -167,8 +167,20 @@
   background-repeat: no-repeat;
   background-position: 100% 22%;
 }
-.card-media::before {
+.card-video::before {
+  background-image: url("./assets/wed-video.jpg");
+  background-position: 100% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-photo::before {
   background-image: url("./assets/wed-media.jpg");
+  background-position: 100% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-milkshake::before {
+  background-image: url("./assets/wed-milkshake.jpg");
   background-position: 100% 30%;
   background-size: cover;
   background-repeat: no-repeat;
