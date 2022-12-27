@@ -17,9 +17,6 @@ module.exports = {
       colors: {
         "sky-opacity": "rgba(224, 242, 254, .5)",
       },
-      backgroundImage: {
-        "hero-pattern": "url('./assets/hero-bg.jpg')",
-      },
     },
   },
   plugins: [require("flowbite/plugin")],
