@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,602 +15,347 @@
     />
     <title>Молодожёнам.ру - Организация свадеб</title>
   </head>
-  <body>
+  <body class="bg-amber-50">
     <div>
-      <main>
-        <!-- Hero -->
-        <section>
-          <div
-            class="w-full h-full bg-hero bg-cover bg-center bg-no-repeat"
-          >
-            <!-- Navigation -->
-            <div>
-              <nav class="bg-sky-opacity border-gray-200 dark:bg-gray-900">
-                <div
-                  class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5"
+      <!-- Navbar -->
+      <header
+        class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-pink-200 text-sm py-4"
+      >
+        <nav
+          class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          aria-label="Global"
+        >
+          <div class="flex items-center justify-between">
+            <a class="flex-none text-3xl font-hwrite text-fuchsia-700" href="#"
+              >Молодожёнам.ру</a
+            >
+            <div class="sm:hidden">
+              <button
+                type="button"
+                class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white/[.25] font-medium bg-blue-600 text-white shadow-sm align-middle hover:bg-white/[.15] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white transition-all text-sm"
+                data-hs-collapse="#navbar-primary"
+                aria-controls="navbar-primary"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  class="hs-collapse-open:hidden w-4 h-4"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
                 >
-                  <a href="#" class="flex items-center">
-                    <img
-                      src="./assets/white-doves.png"
-                      class="h-6 mr-3 sm:h-9"
-                      alt="Два белых голубя"
-                    />
-                    <span
-                      class="self-center text-sky-700 text-xl font-semibold font-hwrite italic whitespace-nowrap dark:text-white"
-                      >Молодожёнам.ру</span
-                    >
-                  </a>
-                  <div class="flex items-center md:order-1">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+                <svg
+                  class="hs-collapse-open:block hidden w-4 h-4"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            id="navbar-primary"
+            class="flex hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          >
+            <div
+              class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
+            >
+              <a class="nav-link" href="#" aria-current="section">Каталог</a>
+              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#">Традиции</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- /Navbar -->
+
+      <!-- Hero -->
+      <main class="bg-slate-100">
+        <div class="container flex flex-col">
+          <div class="flex justify-between items-center mt-2">
+            <div class="flex items-center">
+              <label class="font-main text-lg mr-2" for="chooseCity"
+                >Выбрать регион:</label
+              >
+              <input
+                class="rounded-l-xl pl-4 py-2 focus:ring-lime-100 border-slate-500 border-2 border-r-0"
+                id="chooseCity"
+                name="chooseCity"
+                list="cities"
+              />
+              <datalist id="cities">
+                <option value="Сибирский округ" />
+                <option value="Северо-Кавказский ФО" />
+              </datalist>
+              <button
+                class="text-slate-600 hover:text-white bg-blue-200 hover:bg-slate-500 px-4 py-2 rounded-r-xl border-slate-500 border-2"
+              >
+                OK
+              </button>
+            </div>
+            <div>
+              <button
+                class="font-main text-lg text-slate-600 bg-blue-200 hover:bg-blue-400 rounded-lg py-2 px-4 border-slate-500 border-2 hover:bg-slate-500 hover:text-white"
+                href="#"
+              >
+                Войти
+              </button>
+            </div>
+          </div>
+          <div class="w-3/4 mx-auto py-12">
+            <h2 class="font-title text-2xl text-center py-4">
+              Организация свадеб
+            </h2>
+            <p class="text-center font-main">
+              Выберите Ваш регион в верхнем меню ("Выбрать регион"), чтобы
+              просмотреть список свадебных агентств, предложения по организации
+              свадьбы, информацию о фото-видеосъёмке, звуковому и световому
+              оформлению, прокате лимузинов и другую полезную для проведения
+              свадьбы информацию.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- /Hero -->
+
+      <!-- Search -->
+      <section>
+        <div class="w-3/5 mx-auto py-8">
+          <form>
+            <div class="flex">
+              <label
+                for="search-dropdown"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Your Email</label
+              >
+              <button
+                id="dropdown-button"
+                data-dropdown-toggle="dropdown"
+                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                type="button"
+              >
+                Категории
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
+                data-popper-reference-hidden=""
+                data-popper-escaped=""
+                data-popper-placement="top"
+                style="
+                  position: absolute;
+                  inset: auto auto 0px 0px;
+                  margin: 0px;
+                  transform: translate3d(897px, 5637px, 0px);
+                "
+              >
+                <ul
+                  class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdown-button"
+                >
+                  <li>
                     <button
                       type="button"
-                      data-dropdown-toggle="language-dropdown-menu"
-                      class="inline-flex items-center justify-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                        />
-                      </svg>
-                      Центральный ФО
+                      Ведущие
                     </button>
-                    <!-- Dropdown -->
-                    <div
-                      class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700"
-                      id="language-dropdown-menu"
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      <ul class="py-1" role="none">
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
+                      Видеографы
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      Фотографы
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      Авто на свадьбу
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                  placeholder="Искать ведущего, фотографа, видеографа ..."
+                  required
+                />
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-lime-400 rounded-r-lg border border-lime-600 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    ></path>
+                  </svg>
+                  <span class="sr-only">Поиск</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- /Search -->
 
-                              Северо-Западный ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
+      <!-- Categoties -->
+      <section>
+        <div class="container flex justify-center">
+          <div class="inline-flex rounded-md shadow-sm">
+            <button
+              type="button"
+              class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 sm:p-4"
+            >
+              Каталог
+            </button>
+            <button
+              type="button"
+              class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 sm:p-4"
+            >
+              Популярные
+            </button>
+            <button
+              type="button"
+              class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 sm:p-4"
+            >
+              Понравившиеся
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- /Categoties -->
 
-                              Южный ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Приволжский ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Уральский ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Северо-Кавказский ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Сибирский ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Дальневосточный ФО
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Крым
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              СНГ
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                            role="menuitem"
-                          >
-                            <div class="inline-flex items-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                                />
-                              </svg>
-
-                              Другие страны
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+      <!-- Main catalogue -->
+      <section id="catalogue">
+        <div class="container py-12">
+          <div class="flex flex-col gap-8">
+            <!-- Card -->
+            <div class="bg-white border-gray border-2 rounded-xl">
+              <div class="flex flex-col">
+                <!-- Card-header -->
+                <div
+                  class="bg-slate-50 rounded-t-xl flex justify-between items-center"
+                >
+                  <h3 class="font-title text-xl p-4">Оформление свадьбы</h3>
+                  <div class="flex justify-center items-center gap-4">
+                    <a class="p-4 hover:underline text-lg" href="">Контакты</a>
+                    <div class="p-4">
+                      <a id="likeBtn" class="cursor-pointer relative z-10">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="heartIcon"
+                          class="icon icon-tabler icon-tabler-heart"
+                          width="44"
+                          height="44"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                          />
+                        </svg>
+                      </a>
                     </div>
-                    <button
-                      data-collapse-toggle="mobile-menu-language-select"
-                      type="button"
-                      class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                      aria-controls="mobile-menu-language-select"
-                      aria-expanded="false"
-                    >
-                      <span class="sr-only">Open main menu</span>
-                      <svg
-                        class="w-6 h-6"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        aria-hidden="true"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
                   </div>
-                  <div class="flex items-center">
+                </div>
+                <!-- Card-body -->
+                <div class="flex">
+                  <div class="flex overflow-x-scroll scrollbar-hide">
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/wed-decoration.jpg"
+                      alt="Оформление свадеб"
+                    />
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/wed-decor.jpg"
+                      alt="Оформление свадеб"
+                    />
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/wed-media.jpg"
+                      alt="Оформление свадеб"
+                    />
+                  </div>
+                </div>
+                <!-- Card-footer -->
+                <div>
+                  <p class="font-main py-4 px-4">
+                    Хочется красивый декор и не переплачивать, а каждый флорист,
+                    аксессуары и декоратор закладывают плату за услугу и за
+                    доставку.<br />
+                    Выход: не платить за доставку трижды, работать с одним.
+                  </p>
+                  <div
+                    class="flex gap-8 justify-center items-center bg-gray border-t-2"
+                  >
                     <a
                       href="#"
-                      class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                      >Войти</a
+                      class="w-full text-center hover:underline hover:bg-slate-200 p-4 rounded-b-xl font-main"
+                      >Подробнее...</a
                     >
                   </div>
                 </div>
-              </nav>
-              <nav class="bg-sky-50 dark:bg-gray-700">
-                <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
-                  <div class="flex items-center justify-center">
-                    <ul
-                      class="flex flex-row mt-0 space-x-8 text-sm font-medium"
-                    >
-                      <li>
-                        <a href="#" class="nav-link" aria-current="page"
-                          >Главная</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link">Каталог</a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link">Контакты</a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link">Традиции</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <!-- /Navigation -->
-
-            <div
-              class="w-full h-full py-12 px-24 flex justify-end align-center"
-            >
-              <div class="bg-sky-opacity py-12 w-1/2 relative z-10">
-                <h1
-                  class="text-cyan-600 text-center italic font-bold font-hwrite text-3xl mb-8"
-                >
-                  Молодожёнам.ру
-                </h1>
-                <p class="text-xl text-center text-cyan-500 font-sans">
-                  Организация свадеб
-                </p>
-                <p class="text-xl text-center text-cyan-500">
-                  Фотографы и видеографы
-                </p>
-                <p class="text-xl text-center text-cyan-500">
-                  Заказ свадебного авто
-                </p>
-                <p class="text-xl text-center text-cyan-500">Выбор ведущего</p>
               </div>
             </div>
+            <!-- /Card -->
           </div>
-        </section>
-        <!-- /Hero -->
-
-        <!-- Catalogue -->
-        <section id="catalogue" class="bg-sky-50">
-          <div class="flex flex-wrap">
-            <div class="card card-decoration">
-              <div class="content">
-                <h2 class="title">Оформление свадеб</h2>
-                <p class="description">
-                  Хочется красивый декор и не переплачивать, а каждый флорист,
-                  аксессуары и декоратор закладывают плату за услугу и за
-                  доставку. Выход: не платить за доставку трижды: работать с
-                  одним.
-                </p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-            <div class="card card-auto">
-              <div class="content">
-                <h2 class="title">Авто на свадьбу</h2>
-                <p class="description">
-                  Аренда микроавтобуса с водителем. Предлагает Вам большой выбор
-                  микроавтобусов повышенной комфортности. У нас вы можете
-                  заказать микроавтобус с водителем на 6, 8, 10, 11, 17, 18 и 20
-                  мест. Подробная информация на сайте: https://avtoarena-nn.ru
-                </p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-            <div class="card card-leader">
-              <div class="content">
-                <h2 class="title">Оформление свадеб</h2>
-                <p class="description">
-                  Хочется красивый декор и не переплачивать, а каждый флорист,
-                  аксессуары и декоратор закладывают плату за услугу и за
-                  доставку. Выход: не платить за доставку трижды: работать с
-                  одним.
-                </p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-            <div class="card card-video">
-              <div class="content">
-                <h2 class="title">Видеосъёмка любых мероприятий</h2>
-                <p class="description">
-                  Для Вас: Видео-фотосъёмка любых мероприятий.Качественно в
-                  .Full HD: Cвадьба, венчания, крещение, школы, садики, дни
-                  рождения, юбилеи, и.т.д....Перезапись кассет на DVD. Выезд по
-                  краю. Звоните. т.89624518391. т. 89624475490.
-                </p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-            <div class="card card-photo">
-              <div class="content">
-                <h2 class="title">Свадебная фотосъёмка</h2>
-                <p class="description">
-                  Все виды фотоуслуг. Выезд в другие города. Подарочные карты. 
-                  Готов ответить на все ваши вопросы, также буду рад сотрудничеству.
-                </p>
-                <p class="description">+7 937 932 41 18</p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-            <div class="card card-milkshake">
-              <div class="content">
-                <h2 class="title">Кавер-группа MILKSHAKE</h2>
-                <p class="description">
-                  Кавер-группа MILKSHAKE (Милкшейк) — это живая музыка, танцы до упаду и неподдельные крутые эмоции на вашем празднике 🔥
-                </p>
-                <p class="description">
-                  Энергия, драйв, искренняя любовь к своему делу, интерактивное взаимодействие с гостями — танцевать и подпевать будут все! 💃🕺🎤
-                </p>
-                <button class="btn">Далее</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /Catalogue -->
-
-        <!-- Footer -->
-        <footer id="contacts" class="bg-sky-100">
-          <div class="container py-12">
-            <nav class="w-full flex justify-center py-4">
-              <ul class="flex w-full justify-around">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Реклама</a></li>
-                <li><a href="#">О проекте</a></li>
-                <li><a href="#">Свадебные сайты</a></li>
-              </ul>
-            </nav>
-            <nav class="w-full flex justify-center">
-              <ul class="flex w-full justify-center gap-8 py-8">
-                <li><a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
-                  </svg>
-                </a></li>
-                <li><a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <polyline points="3 7 12 13 21 7" />
-                  </svg>
-                </a></li>
-                <li><a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                  </svg>
-                </a></li>
-                <li><a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                  </svg>
-                </a></li>
-                <li><a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
-                    <line x1="8" y1="9" x2="16" y2="9" />
-                    <line x1="8" y1="13" x2="14" y2="13" />
-                  </svg>
-                </a></li>
-              </ul>
-            </nav>
-            <div class="text-slate-400">
-              <div>
-                <p class="text-center">&copy; 2022 Молодожёнам.ру. Все права защищены</p>
-              </div>
-              <div class="flex justify-center gap-8">
-                <a href="#" class="underline">Политика конфиденциальности</a>
-                <a href="#" class="underline">Лицензионное соглашение</a>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- /Footer -->
-      </main>
+        </div>
+      </section>
+      <!-- /Main catalogue -->
     </div>
     <script type="module" src="/main.js"></script>
   </body>

@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ["Rubik"],
-        secondary: ["Cardo"],
-        hwrite: ["Lobster"],
+        main: ["Gilroy Regular"],
+        title: ["Acrom Bold"],
+        hwrite: ["Astrum Script Cyrillic"],
       },
       container: {
         center: true,
