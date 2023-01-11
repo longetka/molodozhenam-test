@@ -3,16 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
     <title>Молодожёнам.ру - Организация свадеб</title>
   </head>
   <body class="bg-amber-50">
@@ -83,7 +73,11 @@
       <main class="bg-slate-100">
         <div class="container flex flex-col">
           <div class="flex justify-between items-center mt-2">
-            <div class="flex items-center">
+            <div
+              class="flex items-center"
+              aria-disabled="false"
+              id="chooseRegion"
+            >
               <label class="font-main text-lg mr-2" for="chooseCity"
                 >Выбрать регион:</label
               >
@@ -91,17 +85,47 @@
                 class="rounded-l-xl pl-4 py-2 focus:ring-lime-100 border-slate-500 border-2 border-r-0"
                 id="chooseCity"
                 name="chooseCity"
+                placeholder="Выберите свой регион"
                 list="cities"
               />
               <datalist id="cities">
-                <option value="Сибирский округ" />
+                <option value="Сибирский ФО" />
                 <option value="Северо-Кавказский ФО" />
               </datalist>
               <button
-                class="text-slate-600 hover:text-white bg-blue-200 hover:bg-slate-500 px-4 py-2 rounded-r-xl border-slate-500 border-2"
+                id="confirmRegion"
+                class="text-slate-600 hover:text-white bg-blue-200 hover:bg-slate-500 px-4 py-2 rounded-r-xl border-slate-500 border-2 disabled:cursor-not-allowed enabled:cursor-pointer disabled:bg-slate-300"
               >
                 OK
               </button>
+            </div>
+            <div
+              class="flex justify-center items-center gap-4 hidden"
+              aria-disabled="true"
+              id="choosedRegion"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-map-pin"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#597e8d"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="11" r="3" />
+                <path
+                  d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                />
+              </svg>
+              <p
+                id="choosedCity"
+                class="font-main text-lg hover:underline hover:cursor-pointer"
+              ></p>
             </div>
             <div>
               <button
