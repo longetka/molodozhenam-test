@@ -416,13 +416,20 @@
         <div class="container py-12">
           <div class="flex flex-col gap-8">
             <!-- Card -->
-            <div class="bg-white shadow-lg border-gray border-2 rounded-xl">
+            <div class="card-wrapper">
               <div class="flex flex-col">
                 <!-- Card-header -->
                 <div
                   class="bg-slate-50 rounded-t-xl flex justify-between items-center"
                 >
-                  <h3 class="font-title text-xl p-4">Оформление свадьбы</h3>
+                  <div class="p-4">
+                    <h3 class="font-title text-xl">Оформление свадьбы</h3>
+                    <a
+                      href="#"
+                      class="text-xs hover:underline hover:text-blue-500"
+                      >ИП Дегтярева Лариса Александровна</a
+                    >
+                  </div>
                   <div class="flex justify-center items-center gap-4">
                     <a class="p-4 hover:underline text-lg" href="">Контакты</a>
                     <div class="p-4">
@@ -505,10 +512,132 @@
               </div>
             </div>
             <!-- /Card -->
+            <!-- Card -->
+            <div class="card-wrapper">
+              <div class="flex flex-col">
+                <!-- Card-header -->
+                <div
+                  class="bg-slate-50 rounded-t-xl flex justify-between items-center"
+                >
+                  <div class="p-4">
+                    <h3 class="font-title text-xl">Микроавтобус на свадьбу</h3>
+                    <a
+                      href="#"
+                      class="text-xs hover:underline hover:text-blue-500"
+                      >"Авто-Арена"</a
+                    >
+                  </div>
+                  <div class="flex justify-center items-center gap-4">
+                    <a class="p-4 hover:underline text-lg" href="">Контакты</a>
+                    <div class="p-4">
+                      <a id="likeBtn" class="cursor-pointer relative z-10">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="heartIcon"
+                          class="icon icon-tabler icon-tabler-heart"
+                          width="44"
+                          height="44"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-body -->
+                <div class="flex justify-center">
+                  <div class="flex overflow-x-scroll scrollbar-hide">
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/micro-bus-on-wed1.jpg"
+                      alt="Микроавтобус на свадьбу"
+                    />
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/micro-bus-on-wed2.jpg"
+                      alt="Микроавтобус на свадьбу"
+                    />
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/micro-bus-on-wed3.jpg"
+                      alt="Микроавтобус на свадьбу"
+                    />
+                    <img
+                      class="object-cover max-w-xs h-auto"
+                      src="./assets/images/micro-bus-on-wed4.jpg"
+                      alt="Микроавтобус на свадьбу"
+                    />
+                  </div>
+                </div>
+                <!-- Card-footer -->
+                <div>
+                  <p class="font-main py-4 px-4">
+                    Аренда микроавтобуса с водителем. Предлагает Вам большой
+                    выбор микроавтобусов повышенной комфортности. У нас вы
+                    можете заказать микроавтобус с водителем на 6, 8, 10, 11,
+                    17, 18 и 20 мест.<br />
+                    <br />
+                    Подробная информация на сайте:
+                    <a
+                      class="hover:underline hover:text-blue-500"
+                      href="https://avtoarena-nn.ru"
+                      >https://avtoarena-nn.ru</a
+                    >
+                  </p>
+                  <div
+                    class="flex gap-8 justify-center items-center bg-gray border-t-2"
+                  >
+                    <a
+                      href="#"
+                      class="w-full text-center hover:underline hover:bg-slate-200 p-4 rounded-b-xl font-main"
+                      >Подробнее...</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Card -->
           </div>
         </div>
       </section>
       <!-- /Main catalogue -->
+      <footer class="bg-pink-200">
+        <div class="container py-4">
+          <div class="flex flex-col justify-center items-center gap-4">
+            <div>
+              <a
+                class="flex-none text-3xl font-hwrite text-fuchsia-700"
+                href="#"
+                >Молодожёнам.ру</a
+              >
+            </div>
+            <div>
+              <ul class="flex gap-8">
+                <li><a class="nav-link" href="#">Контакты</a></li>
+                <li><a class="nav-link" href="#">Реклама</a></li>
+                <li><a class="nav-link" href="#">О проекте</a></li>
+                <li><a class="nav-link" href="#">Свадебные сайты</a></li>
+              </ul>
+            </div>
+            <div class="flex justify-center items-center gap-4">
+              <a class="footer-link" href="#">Политика конфиденциальности</a>
+              <a class="footer-link" href="#">Лицензионное соглашение</a>
+            </div>
+            <div>
+              <p class="text-xs text-slate-600">Молодожёнам.ру - 2023 год</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

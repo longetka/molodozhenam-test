@@ -50,3 +50,13 @@
 .nav-link {
   @apply font-main text-lg text-slate-500 hover:text-slate-900;
 }
+
+/* Card */
+.card-wrapper {
+  @apply bg-white shadow-lg border-gray-200 border-2 rounded-xl hover:border-gray-400 hover:shadow-slate-400;
+}
+
+/* Footer */
+.footer-link {
+  @apply text-slate-600 text-xs hover:text-black hover:underline;
+}
